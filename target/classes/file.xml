@@ -1,0 +1,12 @@
+<book_flight>
+    <customer>
+        <firstname>Иван</firstname>
+        <surname>Петров</surname>
+        <booking_data>
+            <airline>Аэрофлот</airline>
+            <connection>SU1010</connection>
+            <date>2022-01-01</date>
+            <class>business</class>
+        </booking_data>
+    </customer>
+</book_flight>
