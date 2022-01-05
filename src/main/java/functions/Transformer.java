@@ -23,9 +23,9 @@ public class Transformer {
         }
 
         bookFlight.setDate(newDateFormat.format(date));
-        bookFlight.setPassenger(book_fli.getCustomer().getFirstname() + book_fli.getCustomer().getSurname());
+        bookFlight.setPassenger(book_fli.getCustomer().getFirstname() + " " + book_fli.getCustomer().getSurname());
         bookFlight.setFlightClass(book_fli.getCustomer().getBookingData().getFlight_class());
-        bookFlight.setFlightClass(book_fli.getCustomer().getBookingData().getConnection());
+        bookFlight.setFlight(book_fli.getCustomer().getBookingData().getConnection());
         return bookFlight;
     }
 }

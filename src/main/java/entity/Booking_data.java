@@ -4,17 +4,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 
-@XmlRootElement(name = "booking_data")
 @XmlAccessorType(XmlAccessType.FIELD)
+@XmlRootElement
+@XmlType(name = "booking_data")
 public class Booking_data {
     @XmlElement(name = "airline")
     private String airline;
