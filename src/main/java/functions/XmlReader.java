@@ -18,10 +18,10 @@ public class XmlReader {
             JAXBContext context = JAXBContext.newInstance(book_flight.class);
             Unmarshaller unMarshaller = context.createUnmarshaller();
             book = (book_flight) unMarshaller.unmarshal(file);
+            LogCreator.logCreator("Информация с файла прочитана");
         } catch (JAXBException e) {
             e.printStackTrace();
         }
-        LogCreator.logCreator("Информация с файла прочитана");
         return book;
     }
 }
