@@ -26,6 +26,7 @@ public class Transformer {
         bookFlight.setPassenger(book_fli.getCustomer().getFirstname() + " " + book_fli.getCustomer().getSurname());
         bookFlight.setFlightClass(book_fli.getCustomer().getBookingData().getFlight_class());
         bookFlight.setFlight(book_fli.getCustomer().getBookingData().getConnection());
+        LogCreator.logCreator("Информация обработана");
         return bookFlight;
     }
 }

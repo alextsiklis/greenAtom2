@@ -21,7 +21,7 @@ public class XmlReader {
         } catch (JAXBException e) {
             e.printStackTrace();
         }
-        System.out.println(book);
+        LogCreator.logCreator("Информация с файла прочитана");
         return book;
     }
 }
