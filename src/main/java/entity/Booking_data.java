@@ -10,9 +10,14 @@ import javax.xml.bind.annotation.*;
 @AllArgsConstructor
 @NoArgsConstructor
 
-@XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement
-@XmlType(name = "booking_data")
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "booking_data", propOrder = {
+        "airline",
+        "connection",
+        "data",
+        "flight_class"
+})
 public class Booking_data {
     @XmlElement(name = "airline")
     private String airline;
@@ -23,6 +28,6 @@ public class Booking_data {
     @XmlElement(name = "class")
     private String flight_class;
 
-    @XmlElement(name = "date")
+    @XmlElement(name = "data")
     private String data;
 }

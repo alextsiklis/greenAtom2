@@ -4,17 +4,20 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 
-@XmlRootElement(name = "customer")
+@XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "customer", propOrder = {
+        "firstname",
+        "surname",
+        "bookingData",
+})
 public class Customer {
     @XmlElement(name = "surname")
     private String surname;
@@ -22,6 +25,6 @@ public class Customer {
     @XmlElement(name = "firstname")
     private String firstname;
 
-    @XmlElement(name = "bookingData")
-    private Booking_data bookingData;
+    @XmlElement(name = "booking_data")
+    private Booking_data bookingData = new Booking_data();
 }

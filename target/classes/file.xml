@@ -5,7 +5,7 @@
         <booking_data>
             <airline>Аэрофлот</airline>
             <connection>SU1010</connection>
-            <date>2022-01-01</date>
+            <data>2022-01-01</data>
             <class>business</class>
         </booking_data>
     </customer>
