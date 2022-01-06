@@ -1,4 +1,4 @@
-<book_flight>
+<ns0:book_flight xmlns:ns0="urn:aeroflot.ru">
     <customer>
         <firstname>Иван</firstname>
         <surname>Петров</surname>
@@ -9,4 +9,4 @@
             <class>business</class>
         </booking_data>
     </customer>
-</book_flight>
+</ns0:book_flight>

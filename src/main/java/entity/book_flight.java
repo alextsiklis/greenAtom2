@@ -10,7 +10,7 @@ import javax.xml.bind.annotation.*;
 @AllArgsConstructor
 @NoArgsConstructor
 
-@XmlRootElement(name = "book_flight")
+@XmlRootElement(name = "book_flight", namespace = "urn:aeroflot.ru")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class book_flight {
 
